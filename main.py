@@ -11,6 +11,7 @@ from helpers.randomFunctions import similarList, getStrings
 intents = discord.Intents.default()
 intents.message_content = True
 
+#h
 prefix = ">"
 adminId = "468719193798213654"
 
