@@ -1,0 +1,69 @@
+s == NaN
+s == это будет комментарием
+s == не удаляйте пожойста
+
+commands.help.hidden == pong;test_string;load;unload;reload
+
+s == тестовые строки, пускай будут
+hello.world == Привет Мир!
+sample.test == тестовый текст\nв несколько строк
+sample.other_test == другой тестовый текст
+
+s == текст main
+main.no_command == такой команды нет, возможно вы имели ввиду
+
+s == текст helpers.randomFunctions.trueRandom
+helpers.randomFunctions.trueRandom.min == минимум должно быть в диапазоне [-1000000000, 1000000000]
+helpers.randomFunctions.trueRandom.max == максимум должно быть в диапазоне [-1000000000, 1000000000]
+helpers.randomFunctions.trueRandom.count == количество должно быть в диапазоне [1, 10000]
+
+s == текст helpers.randomFunctions.showAsList
+helpers.randomFunctions.showAsList.all == всего
+helpers.randomFunctions.showAsList.opened_page == страница из
+helpers.randomFunctions.showAsList.not_in_range == страница выходит за диапазон, доступные страницы
+
+
+
+s == текст в commands.test_string
+commands.test_string.info == выдает локализацию строки по id\n алиас:
+commands.test_string.missing == строки с таким id нет
+
+s == текст commands.ping и commands.pong
+commands.ping.info == понг!\n алиас:
+commands.ping == понг!
+commands.pong.info == пинг!\nалиас:
+commands.pong == пинг!
+
+s == текст с commands.random
+commands.random.info == выдает случайное число\n алиас:
+commands.random.1args == Неверный синтаксис\n random [максимальное число]
+commands.random.2args == Неверный синтаксис\n random [минимальное число] [максимальное число]
+commands.random.3args == Неверный синтаксис\n random [минимальное число] [максимальное число] [количество]
+
+s == текст в commands.registration
+commands.registration.info == регистрация в системе rpg\n алиас:
+commands.registration.yes == вы успешно зарегестрированы в системе рпг под ником
+commands.registration.noname == введите ник при регистрации\n registration ник
+commands.registration.no == вы уже зарегестрированы в системе рпг под ником
+
+s == текст с commands.time
+commands.time.info == показывает время\n алиас:
+
+s == текст в commands.help
+commands.help.info == помощь по командам\n алиас:
+commands.help == команды
+commands.help.void == такой команды нет
+
+s == текст с commands.meme
+commands.meme.info == показывает мемы\n алиас:
+commands.meme.error == хватит с тебя мемов, сходи на улицу и потрогай травку
+
+s == текст в commands.profile
+commands.profile.info == показывает профиль в системе рпг
+commands.profile.no == вас нет в системе рпг\n зарегестрироваться: registration ник
+
+s == текст с commands.profile
+commands.bonus.info == получить ежедневный бонус
+commands.bonus.first == вы получили
+commands.bonus.second == вы уже получали сегодня
+commands.bonus.end == \n следующий ежедневный бонус будет доступен
