@@ -1,0 +1,45 @@
+s == NaN
+s == это будет комментарием
+s == не удаляйте пожойста
+
+s == тестовые строки, пускай будут
+hello.world == Привет Мир!
+sample.test == тестовый текст\nв несколько строк
+sample.other_test == другой тестовый текст
+
+s == текст helpers.randomFunctions.trueRandom
+helpers.randomFunctions.trueRandom.min == le minimum doit être dans la plage [-1000000000, 1000000000]
+helpers.randomFunctions.trueRandom.max == le maximum doit être dans la plage [-1000000000, 1000000000]
+helpers.randomFunctions.trueRandom.count == la quantité doit être comprise dans la plage [1, 10000]
+
+s == текст helpers.randomFunctions.showAsList
+helpers.randomFunctions.showAsList.all == Total
+helpers.randomFunctions.showAsList.opened_page == page sur
+helpers.randomFunctions.showAsList.not_in_range == page hors limites, pages disponibles
+
+s == текст в commands.test_string
+commands.test_string.info == renvoie la localisation de la chaîne par identifiant
+commands.test_string.missing == il n'y a pas de ligne avec cet identifiant
+
+s == текст commands.ping и commands.pong
+commands.ping.info == pong!
+commands.ping == pong!
+commands.pong.info == ping!
+commands.pong == ping!
+
+s == текст с commands.random
+commands.random.info == donne un nombre aléatoire
+commands.random.1args == Syntaxe invalide\n random [nombre max]
+commands.random.2args == Syntaxe invalide\n random [nombre minimum] [nombre maximum]
+commands.random.3args == Syntaxe invalide\n random [nombre minimum] [nombre maximum] [montant]
+
+s == текст в commands.register
+commands.register.info == inscription RPG
+commands.register == oh-yo cette équipe semble encore inachevée
+
+s == текст с commands.time
+commands.time.info == montre l'heure
+
+s == текст в commands.help
+commands.help.info == aide sur les commandes
+commands.help == commandes
