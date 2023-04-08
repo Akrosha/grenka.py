@@ -8,6 +8,13 @@ def check_user(player_id: str):
     else:
         return None
 
+def just_get_all(page:int = 1, step:int = 5):
+    with open("database/db.json", "r") as file:
+        players = json.load(file)
+        keys = list(players.keys())[step*(page-1):step*page]
+        players = {key:players[key] for key in keys}
+    return players
+
 def update_players(player):
     with open("database/db.json", "r") as file:
         players = json.load(file)
