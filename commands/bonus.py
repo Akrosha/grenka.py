@@ -26,9 +26,9 @@ class Bonus(commands.Cog):
                 
                 player.update({"money": player["money"] + money, "bonus": bonus_time})
                 update_players({player_id: player})
-                text = f"{getStrings(str_id = 'commands.bonus.first')}: {money}{getStrings(str_id = 'commands.bonus.end')} <t:{bonus_time}:F>"
+                text = f"{getStrings(str_id = 'commands.bonus.first')}: {money}{getStrings(str_id = 'commands.bonus.end')} <t:{player['bonus']}:F>"
             else:
-                text = f"{getStrings(str_id = 'commands.bonus.second')}{getStrings(str_id = 'commands.bonus.end')} <t:{bonus_time}:F>"
+                text = f"{getStrings(str_id = 'commands.bonus.second')}{getStrings(str_id = 'commands.bonus.end')} <t:{player['bonus']}:F>"
         else:
             text = getStrings(str_id = "commands.profile.no")
         
