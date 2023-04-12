@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask, request
 from threading import Thread
 from flask_restful import Api, Resource, reqparse
-import random, json
+import requests, random, json
 
 
 app = Flask("")
@@ -100,7 +100,7 @@ ai_quotes = [
     }
 ]
 
-class Quote(Resource):
+"""class Quote(Resource):
     def get(self, id=0):
         if id == 0:
             return random.choice(ai_quotes), 200
@@ -112,7 +112,10 @@ class Quote(Resource):
       parser = reqparse.RequestParser()
       parser.add_argument("author")
       parser.add_argument("quote")
+      print(parser.args)
+      print("2"*20)
       params = parser.parse_args()
+      print("8"*20)
       for quote in ai_quotes:
           if(id == quote["id"]):
               return f"Quote with id {id} already exists", 400
@@ -124,10 +127,7 @@ class Quote(Resource):
       ai_quotes.append(quote)
       return quote, 201
     def put(self, id):
-      parser = reqparse.RequestParser()
-      parser.add_argument("author")
-      parser.add_argument("quote")
-      params = parser.parse_args()
+      params = request.get_json()
       for quote in ai_quotes:
           if(id == quote["id"]):
               quote["author"] = params["author"]
@@ -147,12 +147,22 @@ class Quote(Resource):
       ai_quotes = [qoute for qoute in ai_quotes if qoute["id"] != id]
       return f"Quote with id {id} is deleted.", 200
 
-api.add_resource(Quote, "/api/u", "/api/u/", "/api/u/<int:id>", "/api/u/<int:id>/")
+api.add_resource(Quote, "/api/u", "/api/u/", "/api/u/<int:id>", "/api/u/<int:id>/")"""
 
 @app.route('/')
 def index():
     message = "hello there"
     return message
+
+@app.route('/api/u/', methods=["get"])
+def get_u():
+    return random.choice(ai_quotes)
+
+@app.route('/api/u/<int:id>/', methods=["get"])
+def get_u_id(id):
+    for quote in ai_quotes:
+        if(quote["id"] == id):
+            return quote
 
 
 def run():
@@ -164,3 +174,13 @@ def keep_alive():
     tahread.start()
     
 keep_alive()
+
+r = requests.get("http://127.0.0.1:8080/")
+print(r.text)
+
+data = {
+    "author": "wanobe",
+    "quote": "hello world"
+}
+r = requests.get("http://127.0.0.1:8080/api/u/1")
+print(r.text)

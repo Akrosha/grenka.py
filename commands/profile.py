@@ -20,7 +20,7 @@ class Profile(commands.Cog):
         if player:
             text = """id: {}
 name: {}
-money: {}""".format(player["id"], player["name"], player["money"])
+money: {}""".format(player.get("id"), player.get("name"), player.get("money"))
         else:
             text = getStrings(str_id = "commands.profile.no")
         
