@@ -1,4 +1,4 @@
-import requests
+import os, requests, telebot
 from math import ceil
 
 def getStrings(lang: str = "ru", str_id: str = "hello.world"):
@@ -44,3 +44,7 @@ def similarList(first: str, seconds: list):
         if similar(first, second):
             return second
     return
+
+logbot = telebot.TeleBot(os.getenv("tgtoken"))
+def logger(text):
+    logbot.send_message(os.getenv("tgid"), text)

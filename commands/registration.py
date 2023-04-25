@@ -18,7 +18,7 @@ class Registration(commands.Cog):
         player = check_user(player_id)
         
         if args and not player:
-            update_players({player_id: {"id": player_id, "name": args[:16], "money": 0, "bonus": 0}})
+            update_players({player_id: {"id": player_id, "name": args[:16], "money": 0, "bonus": 0, "health": 20, "experience": 0}})
             text = f"{getStrings(str_id = 'commands.registration.yes')}: {args[:16]}"
         elif not player:
             text = getStrings(str_id = "commands.registration.noname")
