@@ -2,7 +2,7 @@ s == NaN
 s == это будет комментарием
 s == не удаляйте пожойста
 
-commands.help.hidden == pong;test_string;load;unload;reload
+commands.help.hidden == pong;test_string;load;unload;reload;send
 
 s == тестовые строки, пускай будут
 hello.world == Привет Мир!
@@ -59,11 +59,24 @@ commands.meme.info == показывает мемы\n алиас:
 commands.meme.error == хватит с тебя мемов, сходи на улицу и потрогай травку
 
 s == текст в commands.profile
-commands.profile.info == показывает профиль в системе рпг
+commands.profile.info == показывает профиль в системе рпг\n алиас:
+commands.profile.otherno == профиля нет в системе рпг
 commands.profile.no == вас нет в системе рпг\n зарегестрироваться: registration ник
+commands.profile.yes == **⪨───⪻⚜︎⪼───⪩**\n**Статистика**\n\n**Имя:**\n{name}\n**UID:**\n{uid}\n\n**—**\n\n**ОЗ:**\n{minHP}/{maxHP} :heart:\n**Уровень:**\n{level} :arrow_up:\n**Опыт:**\n{minXP}/{maxXP} ({XP}) :sparkles:\n**Грибы:**\n{money} :mushroom:\n\n**⪨───⪻⚜︎⪼───⪩**
 
-s == текст с commands.profile
-commands.bonus.info == получить ежедневный бонус
+s == текст с commands.bonus
+commands.bonus.info == получить ежедневный бонус\n алиас:
 commands.bonus.first == вы получили
 commands.bonus.second == вы уже получали сегодня
-commands.bonus.end == \n следующий ежедневный бонус будет доступен
+commands.bonus.end == :mushroom:\n следующий ежедневный бонус будет доступен
+
+s == текст в commands.chat
+commands.chat.info == початимся?\n алиас:
+
+s == текст с commands.pay
+commands.pay.info == выплатить грибы другому\n алиас:
+commands.pay.zero == можно выплатить только положительное количество :mushroom: больше чем ноль\nкря!
+commands.pay.me == нельзя выплатить :mushroom: самому себе
+commands.pay.no == недостаточно :mushroom:
+commands.pay.yes == успешно передано {money} :mushroom:. пользователю <{name}>
+commands.pay.tome == пользователь <{name}> передал тебе {money} :mushroom:

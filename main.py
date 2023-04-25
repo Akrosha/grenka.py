@@ -4,11 +4,14 @@ import json
 import asyncio
 import discord
 
+from time import time
 from host import keep_alive
+from datetime import datetime
 from discord.ext import commands
-from helpers.randomFunctions import similarList, getStrings
+from helpers.randomFunctions import similarList, getStrings, logger
 
 intents = discord.Intents.default()
+intents.members = True
 intents.message_content = True
 
 prefix = ">"
@@ -59,9 +62,16 @@ async def reload(ctx, extension):
         await ctx.message.reply(f"module not exists: commands.{extension}")
 
 @bot.event
-async def on_message(message):
-    if message.author.id == bot.user.id:
-        return
+async def on_message(message): 
+    text = "$t {time}\n$usr: {user}\n {userId}\n{ind}\n{content}\n{ind}\n{img}".format(
+        time = datetime.fromtimestamp(time()).strftime("%d.%m.%Y %H:%M:%S"),
+        user = message.author,
+        userId = message.author.id,
+        content = message.content,
+        img = message.attachments,
+        ind = "="*13
+        )
+    logger(text[:2000])
     
     if message.content.startswith(">"):
         all_commands = bot.all_commands

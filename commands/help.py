@@ -10,7 +10,7 @@ class Help(commands.Cog):
     async def on_ready(self):
         print("help.py is ready")
 
-    @commands.command(aliases = ["commands", "команды", "помощь", "хелп"])
+    @commands.command(aliases = ["commands", "команды", "помощь", "хелп", "?"])
     async def help(self, ctx, *args):
         """помощь по командам"""
         hidden = getStrings(str_id = "commands.help.hidden").split(";")
