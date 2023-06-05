@@ -1,0 +1,17 @@
+{
+    "start_glade": {
+        "loc_id": "start_glade",
+        "mobs": [],
+        "paths": ["forest"]
+    },
+    "forest": {
+        "loc_id": "forest",
+        "mobs": [],
+        "paths": ["start_glade"]
+    },
+    "void": {
+        "loc_id": "void",
+        "mobs": [],
+        "paths": []
+    }
+}

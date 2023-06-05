@@ -1,0 +1,98 @@
+{
+    "potion": {
+        "species": "potion",
+        "type": "food",
+        "is_counts": true,
+        "is_equips": false,
+        "cost": 50,
+        "durability": 0,
+        "slots_count": 0,
+        "health": 30,
+        "damage": 0,
+        "defence": 0
+    },
+    "sword": {
+        "species": "sword",
+        "type": "food",
+        "is_counts": false,
+        "is_equips": false,
+        "cost": 100,
+        "durability": 0,
+        "slots_count": 0,
+        "health": 30,
+        "damage": 0,
+        "defence": 0
+    },
+    "bread": {
+        "species": "bread",
+        "type": "food",
+        "is_counts": true,
+        "is_equips": false,
+        "cost": 32,
+        "durability": 0,
+        "slots_count": 0,
+        "health": 16,
+        "damage": 0,
+        "defence": 0
+    },
+    "french_bread": {
+        "species": "french_bread",
+        "type": "food",
+        "is_counts": true,
+        "is_equips": false,
+        "cost": 42,
+        "durability": 0,
+        "slots_count": 0,
+        "health": 6,
+        "damage": 0,
+        "defence": 0
+    },
+    "bandage": {
+        "species": "bandage",
+        "type": "food",
+        "is_counts": true,
+        "is_equips": false,
+        "cost": 30,
+        "durability": 0,
+        "slots_count": 0,
+        "health": 25,
+        "damage": 0,
+        "defence": 0
+    },
+    "less_than_three": {
+        "species": "less_than_three",
+        "type": "food",
+        "is_counts": false,
+        "is_equips": false,
+        "cost": 256,
+        "durability": 0,
+        "slots_count": 0,
+        "health": 92,
+        "damage": 0,
+        "defence": 0
+    },
+    "berries": {
+        "species": "berries",
+        "type": "food",
+        "is_counts": true,
+        "is_equips": false,
+        "cost": 20,
+        "durability": 0,
+        "slots_count": 0,
+        "health": 5,
+        "damage": 0,
+        "defence": 0
+    },
+    "dirt": {
+        "species": "dirt",
+        "type": "food",
+        "is_counts": true,
+        "is_equips": false,
+        "cost": 100,
+        "durability": 0,
+        "slots_count": 0,
+        "health": 10,
+        "damage": 0,
+        "defence": 0
+    }
+}

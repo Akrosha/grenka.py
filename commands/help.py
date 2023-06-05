@@ -1,4 +1,5 @@
 from discord.ext import commands
+from discord import Embed
 from helpers.randomFunctions import getStrings, showAsList
 from os import listdir
 
@@ -36,7 +37,9 @@ class Help(commands.Cog):
                     text = f"{args[0]}: {getStrings(str_id = f'commands.help.void')}"
         else:
             text = showAsList(text_list, name = getStrings(str_id = "commands.help"))
-        await ctx.message.reply(text[:2000])
+        
+        embed = Embed(description = text[:2000])
+        await ctx.message.reply(embed = embed)
 
 async def setup(bot):
     await bot.add_cog(Help(bot))
