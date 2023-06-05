@@ -27,9 +27,13 @@ def showAsList(daList: list, name: str = "NaN", page: int = 1, iterator: int = 5
         daList = [f"({i+1}) {element}" for i, element in enumerate(daList)]
         text = """{} ({}: {}):
 {}
+
 {} {} {}""".format(name, getStrings(str_id = "helpers.randomFunctions.showAsList.all"), len(daList), "\n".join(daList[(page - 1)*iterator:(page - 1)*iterator + iterator]), page, getStrings(str_id = "helpers.randomFunctions.showAsList.opened_page"), ceil(len(daList)/iterator))
     else:
-        text = f"{page} {getStrings(str_id = 'helpers.randomFunctions.showAsList.not_in_range')}: 1 - {ceil(len(daList)/iterator)}"
+        if ceil(len(daList)/iterator) > 0:
+            text = f"{page} {getStrings(str_id = 'helpers.randomFunctions.showAsList.not_in_range')}: 1 - {ceil(len(daList)/iterator)}"
+        else:
+            text = getStrings(str_id = 'helpers.randomFunctions.showAsList.null').format(name = name)
     return text
 
 def similar(first: str, second: str):

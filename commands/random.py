@@ -1,4 +1,5 @@
 from discord.ext import commands
+from discord import Embed
 from helpers.randomFunctions import trueRandom, getStrings
 
 class Random(commands.Cog):
@@ -29,7 +30,8 @@ class Random(commands.Cog):
                 text = getStrings(str_id = "commands.random.3args")
         else:
             text = trueRandom()
-        await ctx.message.reply(text[:2000])
+        embed = Embed(description = text[:2000])
+        await ctx.message.reply(embed = embed)
 
 async def setup(bot):
     await bot.add_cog(Random(bot))

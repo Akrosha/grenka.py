@@ -2,10 +2,16 @@ s == NaN
 s == это будет комментарием
 s == не удаляйте пожойста
 
-commands.help.hidden == pong;test_string;load;unload;reload;send
+s == скрытые команды в меню хелп
+commands.help.hidden == pong;test_string;load;unload;reload;send;mk;ir;gi;shopupd;testmeme;patch;from_l;to_l
+
+s == источники и легендарки мемесов
+commands.meme.origin == https://ru.pinterest.com/alinkafr20/%D1%81%D0%BC%D0%B5%D1%88%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B5%D0%BC%D1%8B/;https://ru.pinterest.com/karamelllca223/%D0%BC%D0%B5%D0%BC%D1%8B/;https://ru.pinterest.com/demotos_ru/
+commands.meme.legendary == https://media.discordapp.net/attachments/468809945882689547/1089064511060836362/fgsfds.png;https://tenor.com/view/azumanga-daioh-azumanga-adopted-little-rat-hate-this-thing-gif-23877732;https://tenor.com/view/kasane-teto-anime-dance-triple-gif-10724007;https://tenor.com/view/chiyo-azumanga-hypnosis-chungus-spam-gif-18131229;https://media.discordapp.net/attachments/468809945882689547/1108067813580615690/8X1sT3XF3X8.jpg;https://media.discordapp.net/attachments/468809945882689547/1108076004016140288/yLEkQ5HPNJs.jpg;https://media.discordapp.net/attachments/468809945882689547/1108311453938753577/36_20230517133346.png;https://media.discordapp.net/attachments/468809945882689547/1108345865254469692/k3vfYhgRDJQ.jpg;https://media.discordapp.net/attachments/468809945882689547/1112418123618996295/IMG_20230528_213206_894.jpg
 
 s == тестовые строки, пускай будут
 hello.world == Привет Мир!
+fgsfds == тут был нари
 sample.test == тестовый текст\nв несколько строк
 sample.other_test == другой тестовый текст
 
@@ -21,7 +27,10 @@ s == текст helpers.randomFunctions.showAsList
 helpers.randomFunctions.showAsList.all == всего
 helpers.randomFunctions.showAsList.opened_page == страница из
 helpers.randomFunctions.showAsList.not_in_range == страница выходит за диапазон, доступные страницы
+helpers.randomFunctions.showAsList.null == список {name} пустой
 
+s == текст helpers.rpgengineFunctions.use_item
+helpers.rpgengineFunctions.use_item.healed == восстановлено {health} здоровья
 
 
 s == текст в commands.test_string
@@ -31,7 +40,7 @@ commands.test_string.missing == строки с таким id нет
 s == текст commands.ping и commands.pong
 commands.ping.info == понг!\n алиас:
 commands.ping == понг!
-commands.pong.info == пинг!\nалиас:
+commands.pong.info == пинг!\n алиас:
 commands.pong == пинг!
 
 s == текст с commands.random
@@ -56,13 +65,14 @@ commands.help.void == такой команды нет
 
 s == текст с commands.meme
 commands.meme.info == показывает мемы\n алиас:
-commands.meme.error == хватит с тебя мемов, сходи на улицу и потрогай травку
+commands.meme.error == хватит с тебя мемов, сходи на улицу и {filler}
+commands.meme.filler == потрогай травку;поешь травку;погладь травку;купи хлеба;полей травку;скрути травку;поиграй в мяч;найди друзей;купи ежа;поиграй с травкой;пожуй травку;купи травку;подстриги травку;найди легушку;погладь легушку;попробуй снова;подыши воздухом;погладь воздух
 
 s == текст в commands.profile
 commands.profile.info == показывает профиль в системе рпг\n алиас:
 commands.profile.otherno == профиля нет в системе рпг
 commands.profile.no == вас нет в системе рпг\n зарегестрироваться: registration ник
-commands.profile.yes == **⪨───⪻⚜︎⪼───⪩**\n**Статистика**\n\n**Имя:**\n{name}\n**UID:**\n{uid}\n\n**—**\n\n**ОЗ:**\n{minHP}/{maxHP} :heart:\n**Уровень:**\n{level} :arrow_up:\n**Опыт:**\n{minXP}/{maxXP} ({XP}) :sparkles:\n**Грибы:**\n{money} :mushroom:\n\n**⪨───⪻⚜︎⪼───⪩**
+commands.profile.yes == **⪨───⪻⚜︎⪼───⪩**\n**Статистика**\n\n**Имя:**\n{name}\n**UID:**\n{uid}\n**Локация:**\n{location}\n\n**—**\n\n**ОЗ:**\n{minHP}/{maxHP} :heart:\n**Уровень:**\n{level} :arrow_up:\n**Опыт:**\n{minXP}/{maxXP} ({XP}) :sparkles:\n**Грибы:**\n{money} :mushroom:\n\n**⪨───⪻⚜︎⪼───⪩**
 
 s == текст с commands.bonus
 commands.bonus.info == получить ежедневный бонус\n алиас:
@@ -80,3 +90,73 @@ commands.pay.me == нельзя выплатить :mushroom: самому се�
 commands.pay.no == недостаточно :mushroom:
 commands.pay.yes == успешно передано {money} :mushroom:. пользователю <{name}>
 commands.pay.tome == пользователь <{name}> передал тебе {money} :mushroom:
+
+s == текст в commands.barter
+commands.barter.info == обмен в системе рпг\n алиас:
+commands.barter.help == обмен [номер] [количество]
+commands.barter == обмен
+commands.barter.zero == можно обменять только на положительное количество больше чем ноль\nкря!
+commands.barter.no == недостаточно {second}
+commands.barter.yes == успешно обменяно {money} {second} на {count} {first}
+commands.barter.price == 1 {first} за {price} {second}
+
+s == текст с commands.inventory
+commands.inventory.info == инвентрарь в системе рпг\n алиас:
+commands.inventory.actions == опции
+commands.inventory.actions_list == показать инвентрарь;использовать предмет
+commands.inventory.items == предметы
+commands.inventory.use == предмет [{name}]{x} был использован\n{extra}
+commands.inventory.noitem == предмета с номером {} нет
+
+s == текст в commands.nickname
+commands.nickname.info == смена ника в системе rpg\n алиас:
+commands.nickname.yes == вы изменили свой ник
+commands.nickname.noname == введите ник при смене ника\n nickname ник
+commands.nickname.exist == этот ник уже занят
+
+s == текст с commands.top
+commands.top.info == топы игроков\n алиас:
+commands.top.help == топ [номер] [страница]
+commands.top == топ игроков в категории {}
+commands.top2 == категории топов
+
+s == текст в commands.shop
+commands.shop.info == магазин предметов в системе рпг\n алиас:
+commands.shop.help == магазин [номер] [количество]
+commands.shop == магазин
+commands.shop.zero == можно купить только на положительное количество больше чем ноль\nкря!
+commands.shop.no == недостаточно {second}
+commands.shop.yes == успешно куплено {count} {first} за {money} {second}
+commands.shop.price == 1 {first} за {price} {second}
+
+s == текст с commands.send_idea
+commands.send_idea.info == отправить идею для бота\n алиас:
+commands.send_idea == идеи
+commands.send_idea.ok == идея отправлена
+commands.send_idea.idea == идея #{id}:\n{idea}\n-------------\n{comment}
+
+s == текст в commands.travel
+commands.travel.info == перемещение между локациями\n алиас:
+commands.travel.help == перейти [номер]
+commands.travel == локации
+commands.travel.yes == вы успешно перешли на локацию [{location}]
+commands.travel.no == не удалось перейти на локацию [{location}]
+
+s == регуляры (для бартера)
+regular.experience == опыт:sparkles:
+regular.money == грибы:mushroom:
+
+s == названия локаций
+location.void == пустота
+location.start_glade == деревня новичков
+location.forest == лес
+
+s == названия предметов
+item.potion == зелье
+item.sword == меч
+item.bread == хлеб
+item.french_bread == багет
+item.bandage == бинт
+item.less_than_three == меньше чем три
+item.berries == ягоды
+item.dirt == грязь

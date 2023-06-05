@@ -1,0 +1,45 @@
+#tetriscanvas {
+ display: block;
+ border: 1px solid black;
+}
+#tetris {
+ margin: 0 auto;
+ width: 480px; 
+ height: 600px; 
+ text-align: center;
+ clear: both;
+}
+#tetris_buttons {
+ margin: 0 auto;
+ padding: 1em;
+ width: 480px; 
+ height: 100px; 
+ text-align: center;
+ clear: both;
+}
+.btn {
+ font-size: 1.5em;
+ width: 80px;
+ height: 80px;
+}
+#tetrisleft {
+ width: 300px;
+ min-width: 300px;
+ height: 600px; 
+ float: left; 
+ margin: 0px; 
+}
+#tetrisright {
+ width: 180px; 
+ min-width: 180px;
+ height: 600px; 
+ float: left; 
+ margin: 0px;
+}
+.clear {
+ clear: left; /* Отмена обтекания */
+}
+.info {
+ text-align: left;
+ margin-left: 24px;
+}

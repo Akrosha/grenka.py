@@ -1,0 +1,158 @@
+s == NaN
+s == это будет комментарием
+s == не удаляйте пожойста
+
+s == скрытые команды в меню хелп
+commands.help.hidden == pong;test_string;load;unload;reload;send;mk;ir;gi;shopupd;testmeme;patch
+
+s == источники и легендарки мемесов
+commands.meme.origin == https://ru.pinterest.com/alinkafr20/%D1%81%D0%BC%D0%B5%D1%88%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B5%D0%BC%D1%8B/;https://ru.pinterest.com/karamelllca223/%D0%BC%D0%B5%D0%BC%D1%8B/;https://ru.pinterest.com/demotos_ru/
+commands.meme.legendary == https://media.discordapp.net/attachments/468809945882689547/1089064511060836362/fgsfds.png;https://tenor.com/view/azumanga-daioh-azumanga-adopted-little-rat-hate-this-thing-gif-23877732;https://tenor.com/view/kasane-teto-anime-dance-triple-gif-10724007;https://tenor.com/view/chiyo-azumanga-hypnosis-chungus-spam-gif-18131229;https://media.discordapp.net/attachments/468809945882689547/1108067813580615690/8X1sT3XF3X8.jpg;https://media.discordapp.net/attachments/468809945882689547/1108076004016140288/yLEkQ5HPNJs.jpg;https://media.discordapp.net/attachments/468809945882689547/1108311453938753577/36_20230517133346.png;https://media.discordapp.net/attachments/468809945882689547/1108345865254469692/k3vfYhgRDJQ.jpg
+
+s == тестовые строки, пускай будут
+hello.world == Hello World!
+fgsfds == there was a nari
+sample.test == test text\nto multiple lines
+sample.other_test == other test text
+
+s == текст main
+main.no_command == there is no such command, perhaps you mean
+
+s == текст helpers.randomFunctions.trueRandom
+helpers.randomFunctions.trueRandom.min == minimum must be in the range [-1000000000, 1000000000]
+helpers.randomFunctions.trueRandom.max == maximum must be in the range [-1000000000, 1000000000]
+helpers.randomFunctions.trueRandom.count == the number must be in the range [1, 10000]
+
+s == текст helpers.randomFunctions.showAsList
+helpers.randomFunctions.showAsList.all == Total
+helpers.randomFunctions.showAsList.opened_page == page from
+helpers.randomFunctions.showAsList.not_in_range == page out of range, available pages
+helpers.randomFunctions.showAsList.null == list {name} is empty
+
+s == текст helpers.rpgengineFunctions.use_item
+helpers.rpgengineFunctions.use_item.healed == {health} health restored
+
+s == текст в commands.test_string
+commands.test_string.info == returns localization of string by id\n alias:
+commands.test_string.missing == there is no line with this id
+
+s == текст commands.ping и commands.pong
+commands.ping.info == pong!\n alias:
+commands.ping == pong!
+commands.pong.info == ping!\n alias:
+commands.pong == ping!
+
+s == текст с commands.random
+commands.random.info == returns a random number\n alias:
+commands.random.1args == Invalid syntax\n random [max number]
+commands.random.2args == Invalid syntax\n random [minimum number] [maximum number]
+commands.random.3args == Invalid syntax\n random [minimum number] [maximum number] [amount]
+
+s == текст в commands.registration
+commands.registration.info == login rpg\n alias:
+commands.registration.yes == you have successfully registered in the RPG system under the nickname
+commands.registration.noname == enter your nickname when registering\n registration nickname
+commands.registration.no == you are already registered in the RPG system under the nickname
+
+s == текст с commands.time
+commands.time.info == shows time\n alias:
+
+s == текст в commands.help
+commands.help.info == command help\n alias:
+commands.help == teams
+commands.help.void == no such command
+
+s == текст с commands.meme
+commands.meme.info == shows memes\n alias:
+commands.meme.error == enough of your memes, go outside and {filler}
+commands.meme.filler == touch the grass;eat the grass;stroke the grass;buy bread;field the grass;roll the grass;play ball;make friends;buy a hedgehog;play with the grass;chew the grass;buy the grass;cut the grass;breathe in the air;stroke the air
+
+s == текст в commands.profile
+commands.profile.info == shows profile in RPG system\n alias:
+commands.profile.otherno == no profile in rpg system
+commands.profile.no == you are not in the RPG system\n register: registration nickname
+commands.profile.yes == **⪨───⪻⚜︎⪼───⪩**\n**Statistics**\n\n**Name:**\n{name}\n**UID:**\n{uid} \n**Location:**\n{location}\n\n**—**\n\n**HP:**\n{minHP}/{maxHP} :heart:\n**Level: **\n{level} :arrow_up:\n**Exp:**\n{minXP}/{maxXP} ({XP}) :sparkles:\n**Mushrooms:**\n{money} :mushroom :\n\n**⪨───⪻⚜︎⪼───⪩**
+
+s == текст с commands.bonus
+commands.bonus.info == get daily bonus\n alias:
+commands.bonus.first == You received
+commands.bonus.second == you already received today
+commands.bonus.end == :mushroom:\n next daily bonus will be available
+
+s == текст в commands.chat
+commands.chat.info == shall we begin?\n alias:
+
+s == текст с commands.pay
+commands.pay.info == pay mushrooms to another\n alias:
+commands.pay.zero == you can only pay out a positive amount :mushroom: more than zero\nquack!
+commands.pay.me == can't pay :mushroom: to myself
+commands.pay.no == not enough :mushroom:
+commands.pay.yes == successfully transferred {money} :mushroom:. user <{name}>
+commands.pay.tome == user <{name}> gave you {money} :mushroom:
+
+s == текст в commands.barter
+commands.barter.info == RPG barter\n alias:
+commands.barter.help == barter [number] [amount]
+commands.barter == barter
+commands.barter.zero == can only be bartered for a positive amount greater than zero\nquack!
+commands.barter.no == not enough {second}
+commands.barter.yes == successfully bartered {money} {second} to {count} {first}
+commands.barter.price == 1 {first} for {price} {second}
+
+s == текст с commands.inventory
+commands.inventory.info == inventory in RPG system\n alias:
+commands.inventory.actions == options
+commands.inventory.actions_list == show inventory;use item
+commands.inventory.items == items
+commands.inventory.use == item [{name}]{x} was used\n{extra}
+commands.inventory.noitem == there is no item with number {}
+
+s == текст в commands.nickname
+commands.nickname.info == change nickname in rpg\n alias:
+commands.nickname.yes == you changed your nickname
+commands.nickname.noname == enter nickname when changing nickname\n nickname nickname
+
+s == текст с commands.top
+commands.top.info == top players\n alias:
+commands.top.help == top [number] [page]
+commands.top == top players in category {}
+commands.top2 == top categories
+
+s == текст в commands.shop
+commands.shop.info == item shop in RPG system\n alias:
+commands.shop.help == store [number] [quantity]
+commands.shop == shop
+commands.shop.zero == can only be bought for a positive amount greater than zero\nquack!
+commands.shop.no == not enough {second}
+commands.shop.yes == successfully bought {count} {first} for {money} {second}
+commands.shop.price == 1 {first} for {price} {second}
+
+s == текст с commands.send_idea
+commands.send_idea.info == send bot idea\n alias:
+commands.send_idea.ok == idea sent
+
+s == текст в commands.travel
+commands.travel.info == traveling between locations\n alias:
+commands.travel.help == travel [number]
+commands.travel == locations
+commands.travel.yes == you have successfully traveled to the location [{location}]
+commands.travel.no == failed to travel to location [{location}]
+
+s == регуляры (для бартера)
+regular.experience == experience:sparkles:
+regular.money == mushrooms:mushroom:
+
+s == названия локаций
+location.void == void
+location.start_glade == glade of beginners
+location.forest == the forest
+
+s == названия предметов
+item.potion == potion
+item.sword == sword
+item.bread == bread
+item.french_bread == baguette
+item.bandage == bandage
+item.less_than_three == less than three
+item.berries == berries
+item.dirt == dirt
